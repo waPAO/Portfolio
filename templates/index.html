@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paolo Sigua</title>
+    </head>
+
+    <body style="display: flex; justify-content: center; align-items: center; text-align: center;">
+        <div class="typewriter">
+            <h1 style="color: orange; font-size: 55px; font-family: Protomo-Outline;">Paolo Zapanta Sigua</h1>
+            <h2 style="font-family: Protomo; font-weight: 50;">Applied computer science student with a focus in backend web development.</h1>
+        </div>
+    </body>
+
+    <style>
+        @font-face {
+        font-family: "SLADE";
+        src: url("/static/fonts/SLADE.otf") format("opentype");
+        }
+
+        @font-face {
+        font-family: "Protomo";
+        src: url("/static/fonts/Protomo.otf") format("opentype");
+        }
+
+        @font-face {
+        font-family: "Protomo-Outline";
+        src: url("/static/fonts/Protomo-Outline.otf") format("opentype");
+        }
+
+        .typewriter h2 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+        }
+    </style>
+</html>
